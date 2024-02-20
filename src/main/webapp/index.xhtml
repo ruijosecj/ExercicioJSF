@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+
+</h:head>
+
+<h:body>
+	<h:form id="formPessoa">
+		<h:outputLabel value="Id:" />
+		<h:inputText value="#{contatoBean.contato.id}" readonly="true" />
+		<br />
+		<h:outputLabel value="Nome:" />
+		<h:inputText value="#{contatoBean.contato.nome}" />
+		<br />
+		<h:outputLabel value="Telefone:" />
+		<h:inputText value="#{contatoBean.contato.telefone}" />
+		<br />
+		<h:outputLabel value="Email:" />
+		<h:inputText value="#{contatoBean.contato.email}" />
+		<br />
+		<h:commandButton value="Salvar" action="#{contatoBean.merge}" />
+	</h:form>
+
+</h:body>
+</html>
